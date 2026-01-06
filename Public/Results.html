@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Results - St. Mary's School</title>
+
+    <link rel="icon" href="images/logo (1).png" type="image/png" />
+    <link rel="shortcut icon" href="images/logo (1).png" type="image/png" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css?v=1" />
+  </head>
+  <body>
+    <header id="header-placeholder"></header>
+
+    <main class="container my-5 pt-5">
+      <h1 class="text-center mb-5" data-aos="fade-down">
+        Academic Achievements & Exam Results
+      </h1>
+
+      <p class="lead text-center mb-5" data-aos="fade-up">
+        We proudly highlight the exceptional performance of our students in
+        board examinations and standardized tests.
+      </p>
+
+      <!-- Student Marksheet Portal -->
+      <div class="row mb-5">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="card shadow-lg" data-aos="fade-up">
+            <div class="card-header bg-primary text-white text-center">
+              <h3 class="mb-0">
+                <i class="fas fa-graduation-cap mr-2"></i>Access Your Marksheet
+              </h3>
+            </div>
+            <div class="card-body">
+              <p class="text-muted text-center mb-4">
+                Enter your class and roll number to view your individual
+                marksheet.
+              </p>
+              <form id="marksheet-form">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="student-class" class="form-label">Class</label>
+                    <select class="form-control" id="student-class" required>
+                      <option value="">Select Class</option>
+                      <option value="8">Class 8</option>
+                      <option value="9">Class 9</option>
+                      <option value="10">Class 10</option>
+                      <option value="11">Class 11</option>
+                      <option value="12">Class 12</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="student-roll" class="form-label"
+                      >Roll Number</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="student-roll"
+                      placeholder="Enter roll number"
+                      min="1"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary btn-lg px-5">
+                    <i class="fas fa-search mr-2"></i>View Marksheet
+                  </button>
+                </div>
+              </form>
+              <div
+                id="marksheet-result"
+                class="mt-4"
+                style="display: none"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <h2 class="text-primary mb-4" data-aos="fade-right">
+            Board Examination Highlights
+          </h2>
+
+          <table
+            class="table table-striped table-bordered text-center shadow"
+            data-aos="zoom-in"
+          >
+            <thead class="thead-dark">
+              <tr>
+                <th>Year</th>
+                <th>Exam Name</th>
+                <th>Pass Rate</th>
+                <th>Top Score Achieved</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2024</td>
+                <td>High School Board Exam</td>
+                <td>99.5%</td>
+                <td>98.8%</td>
+              </tr>
+              <tr>
+                <td>2023</td>
+                <td>High School Board Exam</td>
+                <td>99.1%</td>
+                <td>97.9%</td>
+              </tr>
+              <tr>
+                <td>2022</td>
+                <td>High School Board Exam</td>
+                <td>98.8%</td>
+                <td>98.1%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 class="text-primary mt-5 mb-4" data-aos="fade-right">
+            Downloadable Reports
+          </h2>
+
+          <div
+            class="list-group shadow-lg"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+            >
+              2024 Final High School Board Results
+              <i class="fas fa-file-pdf text-danger fa-2x"></i>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              2024 Middle School Semester Report
+              <i class="fas fa-file-pdf text-danger fa-2x"></i>
+            </a>
+            <a
+              href="#"
+              class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              University Admissions Report (2024 Graduates)
+              <i class="fas fa-file-pdf text-danger fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js?v=3"></script>
+  </body>
+</html>
